@@ -1,7 +1,5 @@
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=031882455b536e6b463bb54b6a11c9bd&page=1'
 
-const API_URL_NEXT_PAGE = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=031882455b536e6b463bb54b6a11c9bd&page='
-
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
 
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=031882455b536e6b463bb54b6a11c9bd&query="'
@@ -81,10 +79,4 @@ form.addEventListener('submit', (e) => {
 
         window.location.reload()
     }
-})
-
-next_page.addEventListener('click', () =>{
-    
-    getMovies(API_URL + 1)
-        
 })
